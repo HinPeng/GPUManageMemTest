@@ -1,0 +1,5 @@
+# Intermediate file during C/C plus plus compiling
+*.o
+
+# Profile file
+*.prof
