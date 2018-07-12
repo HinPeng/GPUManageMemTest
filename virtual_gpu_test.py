@@ -6,7 +6,7 @@ virtual_device_gpu_options = config_pb2.GPUOptions(
   visible_device_list='0',
   experimental=config_pb2.GPUOptions.Experimental(
     virtual_devices=[config_pb2.GPUOptions.Experimental.VirtualDevices(memory_limit_mb=[200, 300])])
-    
+)    
 config = config_pb2.ConfigProto(gpu_options=virtual_device_gpu_options)
 
 device_lib.list_local_devices(session_config=config)
